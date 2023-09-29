@@ -1,0 +1,135 @@
+
+    body, h1, h2, h3, p, ul, li {
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    /* Apply a background color and set font styles */
+    body {
+        font-family: Arial, sans-serif;
+
+        background-color: #000000;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+        
+    }
+    
+    /* Style the header */
+    header {
+        background: rgb(255,0,112);
+background: radial-gradient(circle, rgba(255,0,112,1) 0%, rgba(1,139,126,1) 100%);
+       
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 10px;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    /* Style the navigation menu */
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        background-color: #01003c;
+        padding: 10px ;
+        border-radius: 5px;
+    }
+    nav ul li {
+        margin-right: 20px;
+    }
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        transition: color 1s;
+        
+    }
+    
+    nav ul li a:hover {
+        display: block;
+        
+        background-color: #ff00fe;
+        color: #00366e;
+    }
+    
+    /* Style the main content sections */
+    main {
+        margin: 20px 0;
+        padding: 20px;
+      
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background: rgb(34,193,195);
+        background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    }
+    
+    .intro {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .intro h2 {
+        font-size: 2rem;
+        color: #007acc;
+        margin-bottom: 10px;
+    }
+    
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .feature {
+        width: calc(30% - 10px);
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .feature h3 {
+        font-size: 1.5rem;
+        color: #007acc;
+        margin-bottom: 10px;
+    }
+    
+    /* Style the footer */
+    footer {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        background-color: #01003c;
+        color: #fff;
+        border-radius: 5px;
+    }
+    
+    /* Responsive design for smaller screens */
+    @media (max-width: 768px) {
+        main {
+            padding: 10px;
+        }
+    
+        .features {
+            flex-direction: column;
+        }
+    
+        .feature {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+    
